@@ -33,7 +33,8 @@ public class Player : MonoBehaviour
     {
         rb.velocity = Vector2.zero;
         anim.SetTrigger("Dead");
-        GameController.instance.PlayerDied();
+        if(!GameController.instance.gameOver)
+            GameController.instance.PlayerDied();
 
     }
 }
