@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
-    public static GameController instance;            
-
+    public static GameController instance;
+    public GameObject countDownUI;
+    public GameObject gameOverUI;
+    public TextMeshProUGUI scoreText;
     private int score = 0;                        
-    public bool gameOver = false;                
+    public bool gameOver = false;        
+    
 
     void Awake()
     {
@@ -22,6 +25,10 @@ public class GameController : MonoBehaviour
             Destroy(gameObject);
     }
 
+    void Start()
+    {
+        StartCoroutine("StartCountdown");
+    }
     void Update()
     {
         //If the game is over and the player has pressed some input, reload the current scene.
@@ -39,6 +46,7 @@ public class GameController : MonoBehaviour
             return;
         //increase the score
         score++;
+        scoreText.text = "Score: " + score.ToString();
     }
 
 
@@ -46,5 +54,18 @@ public class GameController : MonoBehaviour
     {
         //Set the game to be over.
         gameOver = true;
+        gameOverUI.SetActive(true);
+    }
+
+
+    IEnumerator StartCountdown()
+    {
+        Time.timeScale = 0;
+        float pauseTime = Time.realtimeSinceStartup + 3.5f;
+        while (Time.realtimeSinceStartup < pauseTime)
+            yield return 0;
+        countDownUI.gameObject.SetActive(false);
+        Time.timeScale = 1;
+
     }
 }
