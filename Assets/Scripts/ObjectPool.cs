@@ -5,8 +5,8 @@ using UnityEngine;
 public class ObjectPool : MonoBehaviour
 {
     public GameObject objectPrefab;
-    public int objectPoolSize = 5;
-    public float spawnRate = 3f;
+    private int objectPoolSize = 5;
+    private float spawnRate = 1.5f;
     private float minPos = -1f;
     private float maxPos = 1f;
 

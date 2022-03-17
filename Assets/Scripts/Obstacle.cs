@@ -5,15 +5,16 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     public GameObject cane, caneReversed, candy, candyReversed;
+    public List<Color> candyColors = new List<Color>();
 
     void Start()
     {
         //Assign random rotation degree to candy cane
         RandomRotate(cane);
         RandomRotate(caneReversed);
-        //Assign random color to candy top
-        RandomColour(candy);
-        RandomColour(candyReversed);
+        //Assign the color palette to candy top
+        AssignColour(candy);
+        AssignColour(candyReversed);
     }
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -30,8 +31,9 @@ public class Obstacle : MonoBehaviour
         gameObject.transform.Rotate(0f, 0f, Random.Range(-20f, 20f));
     }
 
-    void RandomColour(GameObject gameObject)
+    void AssignColour(GameObject gameObject)
     {
-        gameObject.GetComponent<SpriteRenderer>().color = new Color(Random.Range(0F, 1f), Random.Range(0, 1f), Random.Range(0, 1f));
+        int randomIndex = Random.Range(0, candyColors.Count);
+        gameObject.GetComponent<SpriteRenderer>().color = candyColors[randomIndex];
     }
 }

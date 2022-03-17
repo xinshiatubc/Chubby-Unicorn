@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 09eaea1bab2284042916ecc00fb494f7
+guid: 971d6c00759b5f141983a94776c11de8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3604265928058284728
-    second: Countdown-sheet_0
+      213: -6798805362131501442
+    second: countdown_0
   - first:
-      213: -7241597095869242238
-    second: Countdown-sheet_1
+      213: 6177356120095089566
+    second: countdown_1
   - first:
-      213: -7361115585744191947
-    second: Countdown-sheet_2
+      213: -2245426086125190547
+    second: countdown_2
   - first:
-      213: 279134085938466907
-    second: Countdown-sheet_3
+      213: -8775578445711770174
+    second: countdown_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Countdown-sheet_0
+      name: countdown_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 908
-        height: 454
+        width: 687
+        height: 617
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,20 +117,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ba25fde3cce40230800000000000000
-      internalID: 3604265928058284728
+      spriteID: e7e71257b8ac5a1a0800000000000000
+      internalID: -6798805362131501442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Countdown-sheet_1
+      name: countdown_1
       rect:
         serializedVersion: 2
-        x: 908
+        x: 687
         y: 0
-        width: 908
-        height: 454
+        width: 687
+        height: 617
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 284a6361fcda08b90800000000000000
-      internalID: -7241597095869242238
+      spriteID: e936a5589a06ab550800000000000000
+      internalID: 6177356120095089566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Countdown-sheet_2
+      name: countdown_2
       rect:
         serializedVersion: 2
-        x: 1816
+        x: 1374
         y: 0
-        width: 908
-        height: 454
+        width: 687
+        height: 617
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53e3029206018d990800000000000000
-      internalID: -7361115585744191947
+      spriteID: d62cc171fd4a6d0e0800000000000000
+      internalID: -2245426086125190547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Countdown-sheet_3
+      name: countdown_3
       rect:
         serializedVersion: 2
-        x: 2724
+        x: 2061
         y: 0
-        width: 908
-        height: 454
+        width: 687
+        height: 617
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b50d015e8feafd300800000000000000
-      internalID: 279134085938466907
+      spriteID: 2cd76cc06e1e63680800000000000000
+      internalID: -8775578445711770174
       vertices: []
       indices: 
       edges: []

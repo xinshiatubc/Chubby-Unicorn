@@ -4,6 +4,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveSystem 
 {
+    // Save the game data in binary format
     public static void SaveData(GameController gc)
     {
         BinaryFormatter formatter = new BinaryFormatter();
@@ -17,6 +18,7 @@ public static class SaveSystem
 
     }
 
+    //Decode the binary format to get the game data
     public static GameData LoadData()
     {
         string path = Application.persistentDataPath + "/data.txt";

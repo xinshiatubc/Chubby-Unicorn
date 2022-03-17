@@ -303,7 +303,7 @@ MonoBehaviour:
   sounds:
   - name: Background
     clip: {fileID: 8300000, guid: 6166673e1f7c8ac42aceddf231621527, type: 3}
-    volume: 0.5
+    volume: 0.4
     loop: 1
     source: {fileID: 0}
   - name: Highlight
@@ -319,6 +319,11 @@ MonoBehaviour:
   - name: GameOver
     clip: {fileID: 8300000, guid: eef11625161a34e4db8b49259ec79cc9, type: 3}
     volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: fe8f49d78d7480344b593f5f123aa0e3, type: 3}
+    volume: 0.5
     loop: 0
     source: {fileID: 0}
 --- !u!1 &311833685

@@ -5,8 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    float jumpAmount = 5f;
-    float speed = 0.5f;
+    private float jumpAmount = 5f;
+    private float speed = 0.5f;
     private Rigidbody2D rb;
     private Animator anim;
 
@@ -23,9 +23,11 @@ public class Player : MonoBehaviour
     void Update()
     {
 
-        if (!GameController.instance.gameOver && Input.GetKeyDown(KeyCode.Space))
+        if (!GameController.instance.gameOver && Time.timeScale == 1 && Input.GetKeyDown(KeyCode.Space))
         {
             rb.velocity = Vector2.up * jumpAmount;
+            FindObjectOfType<AudioManager>().PlayAudio("Jump");
+
         }
     }
 
